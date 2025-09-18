@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{06369ab2-fb38-4526-b64d-c493eadfcbae}</ProjectGuid>
+    <RootNamespace>Gam150</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)Extern\AlphaEngine_V3.08\include;$(SolutionDir)Gam150;$(SolutionDir)Extern\RapidJSON\include;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(ExternalIncludePath)</ExternalIncludePath>
+    <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir).tmp\$(Configuration)-$(Platform)\</IntDir>
+    <LibraryPath>$(SolutionDir)Extern\AlphaEngine_V3.08\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)Extern\AlphaEngine_V3.08\include;$(SolutionDir)Gam150;$(SolutionDir)Extern\RapidJSON\include;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(ExternalIncludePath)</ExternalIncludePath>
+    <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir).tmp\$(Configuration)-$(Platform)\</IntDir>
+    <LibraryPath>$(SolutionDir)Extern\AlphaEngine_V3.08\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Alpha_EngineD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)Assets\*" "$(OutDir)Assets\" /s /r /y /q
+xcopy "$(SolutionDir)Extern\AlphaEngine_V3.08\lib\freetype.dll" "$(OutDir)" /s /r /y /q
+xcopy "$(SolutionDir)Extern\AlphaEngine_V3.08\lib\Alpha_EngineD.dll" "$(OutDir)" /s /r /y /q
+xcopy "$(SolutionDir)Extern\AlphaEngine_V3.08\lib\fmodL.dll" "$(OutDir)" /s /r /y /q</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Alpha_Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)Assets\*" "$(OutDir)Assets\" /s /r /y /q
+xcopy "$(SolutionDir)Extern\AlphaEngine_V3.08\lib\freetype.dll" "$(OutDir)" /s /r /y /q
+xcopy "$(SolutionDir)Extern\AlphaEngine_V3.08\lib\Alpha_Engine.dll" "$(OutDir)" /s /r /y /q
+xcopy "$(SolutionDir)Extern\AlphaEngine_V3.08\lib\fmod.dll" "$(OutDir)" /s /r /y /q</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Backend\ECS\Components\PetComponent.cpp" />
+    <ClCompile Include="Backend\ECS\ECS.cpp" />
+    <ClCompile Include="Backend\ECS\ECS_EntityStack.cpp" />
+    <ClCompile Include="Backend\ECS\ECS_Factory.cpp" />
+    <ClCompile Include="Backend\Graphics\Mesh.cpp" />
+    <ClCompile Include="Backend\SceneManagement\SceneGenerator.cpp" />
+    <ClCompile Include="Backend\Utils.cpp" />
+    <ClCompile Include="Backend\JSONSerializer.cpp" />
+    <ClCompile Include="Backend\VecOperators.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Backend\Sound\AudioManager.cpp" />
+    <ClCompile Include="States\State.cpp" />
+    <ClCompile Include="States\StateAngry.cpp" />
+    <ClCompile Include="States\StateHappy.cpp" />
+    <ClCompile Include="States\StateIdle.cpp" />
+    <ClCompile Include="States\StateWild.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Backend\DependencyInjection\DependencyInjector.h" />
+    <ClInclude Include="Backend\ECS\Components\AnimationComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\AnimationKeyComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\ArrowComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\CheeseComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\ColliderComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\EmitterComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\IsometricTransformComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\MinigameComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\MovementComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\ParticleComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\PlayerComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\PortalComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\PrefabComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\RectTransformComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\SpawnerComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\PetComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\SpriteComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\TextRenderingComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\TileComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\TransformComponent.h" />
+    <ClInclude Include="Backend\ECS\Components\UILogicComponent.h" />
+    <ClInclude Include="Backend\ECS\ECS_Common.h" />
+    <ClInclude Include="Backend\ECS\ECS_Components.h" />
+    <ClInclude Include="Backend\ECS\ECS_EntityStack.h" />
+    <ClInclude Include="Backend\ECS\ECS_Factory.h" />
+    <ClInclude Include="Backend\ECS\ECS_IncludeComponents.h" />
+    <ClInclude Include="Backend\ECS\ECS_System.h" />
+    <ClInclude Include="Backend\ECS\ECS_ComponentPool.h" />
+    <ClInclude Include="Backend\ECS\ECS_Prefab.h" />
+    <ClInclude Include="Backend\Engine_Common.h" />
+    <ClInclude Include="Backend\Graphics\Mesh.h" />
+    <ClInclude Include="Backend\JSONSerializer.h" />
+    <ClInclude Include="Backend\ResourceLibrary.h" />
+    <ClInclude Include="Backend\SceneManagement\SceneCommon.h" />
+    <ClInclude Include="Backend\SceneManagement\SceneGenerator.h" />
+    <ClInclude Include="Backend\Singleton.h" />
+    <ClInclude Include="Backend\Utils.h" />
+    <ClInclude Include="Backend\ECS\ECS.h" />
+    <ClInclude Include="Backend\VecOperators.h" />
+    <ClInclude Include="LevelEditor\LevelEditor.h" />
+    <ClInclude Include="Backend\Sound\AudioManager.h" />
+    <ClInclude Include="States\StateAngry.h" />
+    <ClInclude Include="States\StateHappy.h" />
+    <ClInclude Include="States\StateIdle.h" />
+    <ClInclude Include="States\State.h" />
+    <ClInclude Include="States\StateWild.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Backend\ECS\ECS_ComponentPool.tpp" />
+    <None Include="Backend\ECS\ECS_Components.tpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

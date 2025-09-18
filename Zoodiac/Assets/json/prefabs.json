@@ -1,0 +1,841 @@
+{
+    "Prefabs": [
+        {
+            "Name": "grass",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 1
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/grass.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                }
+            ]
+        },
+        {
+            "Name": "stone",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 1
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/stone.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                }
+            ]
+        },
+        {
+            "Name": "sand",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 1
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/sand.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                }
+            ]
+        },
+        {
+            "Name": "water",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 1
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/water.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.8
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.8
+                }
+            ]
+        },
+        {
+            "Name": "Lfence",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 1
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/Lfence.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                }
+            ]
+        },
+        {
+            "Name": "Rfence",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 1
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/Rfence.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                }
+            ]
+        },
+        {
+            "Name": "Lcorner",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 1
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/Lcorner.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                }
+            ]
+        },
+        {
+            "Name": "Rcorner",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 1
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/Rcorner.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                }
+            ]
+        },
+        {
+            "Name": "tcorner",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 1
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/tcorner.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                }
+            ]
+        },
+        {
+            "Name": "bcorner",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 1
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/bcorner.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                }
+            ]
+        },
+        {
+            "Name": "Tree",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 8
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        2.0,
+                        2.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/tree.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 1.0
+                }
+            ]
+        },
+        {
+            "Name": "OverworldPortal",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 8
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/portal.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "PortalComponent",
+                    "ID": 18,
+                    "scene": 2,
+                    "pet": 0
+                },
+                {
+                    "Name": "EmitterComponent",
+                    "ID": 20,
+                    "Type": 1,
+                    "Emit": 1
+                }
+            ]
+        },
+        {
+            "Name": "WildLandsPortal",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 8
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/portal.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "PortalComponent",
+                    "ID": 18,
+                    "scene": 3,
+                    "pet": 0
+                },
+                {
+                    "Name": "EmitterComponent",
+                    "ID": 20,
+                    "Type": 1,
+                    "Emit": 1
+                }
+            ]
+        },
+        {
+            "Name": "CollectiongamePortal",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 8
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/portal.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "PortalComponent",
+                    "ID": 18,
+                    "scene": 4,
+                    "pet": 1
+                },
+                {
+                    "Name": "EmitterComponent",
+                    "ID": 20,
+                    "Type": 1,
+                    "Emit": 1
+                }
+            ]
+        },
+        {
+            "Name": "ClimbinggamePortal",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 8
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/portal.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "PortalComponent",
+                    "ID": 18,
+                    "scene": 5,
+                    "pet": 2
+                },
+                {
+                    "Name": "EmitterComponent",
+                    "ID": 20,
+                    "Type": 1,
+                    "Emit": 1
+                }
+            ]
+        },
+        {
+            "Name": "Dodging1Portal",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 8
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/portal.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "PortalComponent",
+                    "ID": 18,
+                    "scene": 8,
+                    "pet": 3
+                },
+                {
+                    "Name": "EmitterComponent",
+                    "ID": 20,
+                    "Type": 1,
+                    "Emit": 1
+                }
+            ]
+        },
+        {
+            "Name": "Dodging2Portal",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 8
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/portal.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "PortalComponent",
+                    "ID": 18,
+                    "scene": 7,
+                    "pet": 4
+                },
+                {
+                    "Name": "EmitterComponent",
+                    "ID": 20,
+                    "Type": 1,
+                    "Emit": 1
+                }
+            ]
+        },
+        {
+            "Name": "Dodging3Portal",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 8
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/portal.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "PortalComponent",
+                    "ID": 18,
+                    "scene": 6,
+                    "pet": 5
+                },
+                {
+                    "Name": "EmitterComponent",
+                    "ID": 20,
+                    "Type": 1,
+                    "Emit": 1
+                }
+            ]
+        },
+        {
+            "Name": "Dodging4Portal",
+            "Components": [
+                {
+                    "Name": "ColliderComponent",
+                    "ID": 2,
+                    "Size": [
+                        15.0,
+                        15.0
+                    ],
+                    "Tag": 8
+                },
+                {
+                    "Name": "IsometricTransformComponent",
+                    "ID": 3,
+                    "Scale": [
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "Name": "SpriteComponent",
+                    "ID": 8,
+                    "Sprite": "Assets/tiles/portal.png",
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "TileComponent",
+                    "ID": 9,
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0,
+                    "a": 0.4
+                },
+                {
+                    "Name": "PortalComponent",
+                    "ID": 18,
+                    "scene": 9,
+                    "pet": 6
+                },
+                {
+                    "Name": "EmitterComponent",
+                    "ID": 20,
+                    "Type": 1,
+                    "Emit": 1
+                }
+            ]
+        }
+    ]
+}
